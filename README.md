@@ -1,0 +1,2 @@
+# JavaForTesters
+SoftwareTesting.ru lections

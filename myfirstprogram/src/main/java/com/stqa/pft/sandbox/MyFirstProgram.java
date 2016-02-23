@@ -7,11 +7,13 @@ public class MyFirstProgram {
         hello("world!!!!");
         hello("user");
 
-        double l = 7;
-        System.out.println("area 7 = " + area(l));
-        double a = 5;
-        double b = 4;
-        System.out.println("area 5 4 = " + area(a, b));
+        Square s = new Square(7);
+
+        System.out.println("area 7 = " + area(s));
+
+        Rectangle r = new Rectangle(5, 4);
+
+        System.out.println("area 5 4 = " + area(r));
     }
 
     public static void hello(String somebody) {
@@ -20,11 +22,13 @@ public class MyFirstProgram {
         System.out.println("Hello, " + somebody + "!");
     }
 
-    public static double area(double len) {
-        return len * len;
+    public static double area(Square s) {
+        return s.l * s.l;
     }
 
-    public static double area(double a, double b) {
-        return a * b;
+    public static double area(Rectangle r) {
+        return r.a * r.b;
     }
+
+
 }
